@@ -170,17 +170,21 @@ namespace assignment_adv_03
             #endregion
 
             #region Q2
-            2- Print the collection, Count, first and last grade
+            /*2- Print the collection, Count, first and last grade
 
                 Console.WriteLine(string.Join(grades));
 
             Console.WriteLine("Count:" + grades.Count);
             Console.WriteLine("First Grade:" + grades.First());
             Console.WriteLine("Last Grade:" + grades.Last());
-
+            */
             #endregion
 
-
+            #region Q3
+            3- Sort the grades ascending, then print
+                grades.Sort();
+            Console.WriteLine(string.Join( grades));
+            #endregion
 
 
 

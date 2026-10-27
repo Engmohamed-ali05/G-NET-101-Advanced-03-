@@ -193,15 +193,22 @@ namespace assignment_adv_03
             */
             #endregion
             #region Q5
-            5 - Get all grades below 75(failing grades)
-                var failingGrades = grades.Where(g => g < 75);
+            /*   5 - Get all grades below 75(failing grades)
+                   var failingGrades = grades.Where(g => g < 75);
 
-            Console.WriteLine("Failing grades: " +
-                string.Join(", ", failingGrades));
+               Console.WriteLine("Failing grades: " +
+                   string.Join(", ", failingGrades));*/
 
             #endregion
 
+            #region Q6
+            6- Remove all failing grades(below 75)
+                grades.RemoveAll(g => g < 75);
 
+            Console.WriteLine("After removing failing grades: " +
+                string.Join(", ", grades));
+
+            #endregion
 
 
         }

@@ -248,11 +248,16 @@ namespace assignment_adv_03
             */
             #endregion
             #region Number 3
-            3 Press "back" 3 times using Pop — print each page you leave
-                for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine("Leaving: " + history.Pop());
-            }
+            /* 3 Press "back" 3 times using Pop — print each page you leave
+                 for (int i = 0; i < 3; i++)
+             {
+                 Console.WriteLine("Leaving: " + history.Pop());
+             }*/
+
+            #endregion
+            #region number 4
+            4 - Print the current page after going back
+                Console.WriteLine("Current page after back: " + history.Peek());
 
             #endregion
         }

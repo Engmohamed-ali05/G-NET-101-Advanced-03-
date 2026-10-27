@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignment_adv_03
 {
@@ -202,14 +203,20 @@ namespace assignment_adv_03
             #endregion
 
             #region Q6
-            6- Remove all failing grades(below 75)
-                grades.RemoveAll(g => g < 75);
+            /*    6- Remove all failing grades(below 75)
+                    grades.RemoveAll(g => g < 75);
 
-            Console.WriteLine("After removing failing grades: " +
-                string.Join(", ", grades));
-
+                Console.WriteLine("After removing failing grades: " +
+                    string.Join(", ", grades));
+            */
             #endregion
 
+            #region Q7
+            7- Check if any grade equals 100
+
+                    bool has100 = grades.Any(g => g == 100);
+            Console.WriteLine("Has grade 100: " + has100);
+            #endregion
 
         }
     }

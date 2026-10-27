@@ -1,4 +1,6 @@
-﻿namespace assignment_adv_03
+﻿using System.Drawing;
+
+namespace assignment_adv_03
 {
     internal class Program
     {
@@ -156,18 +158,27 @@
 
 
             #region Q1 :assigment 3
-            1- Create a Collection with these grades: 85, 92, 78, 95, 88, 70, 100, 65
+            /* 1- Create a Collection with these grades: 85, 92, 78, 95, 88, 70, 100, 65
 
 
-                List<int> grades = new List<int>
-          
-                {
-                   85, 92, 78, 95, 88, 70, 100, 65
-          
-                };
+                 List<int> grades = new List<int>
+
+                 {
+                    85, 92, 78, 95, 88, 70, 100, 65
+
+                 };*/
             #endregion
 
+            #region Q2
+            2- Print the collection, Count, first and last grade
 
+                Console.WriteLine(string.Join(grades));
+
+            Console.WriteLine("Count:" + grades.Count);
+            Console.WriteLine("First Grade:" + grades.First());
+            Console.WriteLine("Last Grade:" + grades.Last());
+
+            #endregion
 
 
 

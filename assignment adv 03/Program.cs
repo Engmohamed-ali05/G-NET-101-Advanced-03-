@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Drawing;
 using System.Runtime.Intrinsics.X86;
+using System.Timers;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignment_adv_03
@@ -242,11 +243,18 @@ namespace assignment_adv_03
             history.Push("claude.ai");*/
             #endregion
             #region number 2
-            2- Use Peek to see the current page(top of stack)
-            Console.WriteLine("Current page: " + history.Peek());
+            /*   2- Use Peek to see the current page(top of stack)
+               Console.WriteLine("Current page: " + history.Peek());
+            */
+            #endregion
+            #region Number 3
+            3 Press "back" 3 times using Pop — print each page you leave
+                for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Leaving: " + history.Pop());
+            }
 
             #endregion
-
         }
     }
 }

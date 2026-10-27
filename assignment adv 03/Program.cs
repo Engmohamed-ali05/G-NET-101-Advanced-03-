@@ -212,10 +212,22 @@ namespace assignment_adv_03
             #endregion
 
             #region Q7
-            7- Check if any grade equals 100
+            /* 7- Check if any grade equals 100
 
-                    bool has100 = grades.Any(g => g == 100);
-            Console.WriteLine("Has grade 100: " + has100);
+                     bool has100 = grades.Any(g => g == 100);
+             Console.WriteLine("Has grade 100: " + has100);*/
+            #endregion
+            #region Q8
+            8-Create a List<string> where each grade becomes "Grade: X"
+                List<string> gradeStrings = grades
+    .Select(g => "Grade: " + g)
+    .ToList();
+
+            foreach (string item in gradeStrings)
+            {
+                Console.WriteLine(item);
+            }
+
             #endregion
 
         }

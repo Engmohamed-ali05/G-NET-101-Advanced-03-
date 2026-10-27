@@ -181,12 +181,17 @@ namespace assignment_adv_03
             #endregion
 
             #region Q3
-            3- Sort the grades ascending, then print
-                grades.Sort();
-            Console.WriteLine(string.Join( grades));
+            /* 3- Sort the grades ascending, then print
+                 grades.Sort();
+             Console.WriteLine(string.Join( grades));*/
             #endregion
 
+            #region Q4
+            4 - Get the first grade above 90
+                int grade = grades.First(g => g > 90);
+            Console.WriteLine("Firstgradeabove 90: " + grade);
 
+            #endregion
 
 
 

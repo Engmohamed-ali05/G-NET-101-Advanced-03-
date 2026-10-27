@@ -229,6 +229,16 @@ namespace assignment_adv_03
             }
 
             #endregion
+            #region Question 6 : number1 
+            1-
+                Stack<string> history = new Stack<string>();
+
+            history.Push("google.com");
+            history.Push("github.com");
+            history.Push("stackoverflow.com");
+            history.Push("youtube.com");
+            history.Push("claude.ai");
+            #endregion
 
         }
     }

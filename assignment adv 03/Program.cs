@@ -187,12 +187,19 @@ namespace assignment_adv_03
             #endregion
 
             #region Q4
-            4 - Get the first grade above 90
-                int grade = grades.First(g => g > 90);
-            Console.WriteLine("Firstgradeabove 90: " + grade);
+            /* 4 - Get the first grade above 90
+                  int grade = grades.First(g => g > 90);
+              Console.WriteLine("Firstgradeabove 90: " + grade);
+            */
+            #endregion
+            #region Q5
+            5 - Get all grades below 75(failing grades)
+                var failingGrades = grades.Where(g => g < 75);
+
+            Console.WriteLine("Failing grades: " +
+                string.Join(", ", failingGrades));
 
             #endregion
-
 
 
 

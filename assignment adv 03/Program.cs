@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿using System.Collections;
+using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignment_adv_03
@@ -230,14 +232,19 @@ namespace assignment_adv_03
 
             #endregion
             #region Question 6 : number1 
-            1-
+            1-/*
                 Stack<string> history = new Stack<string>();
 
             history.Push("google.com");
             history.Push("github.com");
             history.Push("stackoverflow.com");
             history.Push("youtube.com");
-            history.Push("claude.ai");
+            history.Push("claude.ai");*/
+            #endregion
+            #region number 2
+            2- Use Peek to see the current page(top of stack)
+            Console.WriteLine("Current page: " + history.Peek());
+
             #endregion
 
         }

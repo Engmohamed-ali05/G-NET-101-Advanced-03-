@@ -256,8 +256,27 @@ namespace assignment_adv_03
 
             #endregion
             #region number 4
-            4 - Print the current page after going back
-                Console.WriteLine("Current page after back: " + history.Peek());
+            /* 4 - Print the current page after going back
+                 Console.WriteLine("Current page after back: " + history.Peek());*/
+
+
+            #endregion
+            #region number 5
+            5- Try TryPop on an empty stack — what happens?
+
+                while (history.Count > 0)
+            {
+                history.Pop();
+            }
+
+            bool success = history.TryPop(out string page);
+
+            Console.WriteLine("TryPop successful: " + success);
+
+
+            // => بترجع false لو الـ Stack فاضي
+
+
 
             #endregion
         }
